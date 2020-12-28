@@ -26,7 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'b!1gd8ub0i5az%*ed*_f$z^h=zj6ftgdowsbu4o#@dh#unp1$$'
 SECRET_KEY ='414e86a26fb08ee474c689a7f954540bba7f1ef393f9eb7e'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['taskprofile.herokuapp.com']
 

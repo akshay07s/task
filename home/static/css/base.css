@@ -15,13 +15,41 @@
                 left: 60%;
                 text-decoration: none;
             }
-            .box:hover{
-                color: cadetblue;
-            }
             .box{
-                font-size: 30px;
+                background-image: linear-gradient(to right,#ECE9E6, #FFFFFF);
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid white;
+                font-size: 25px;
+                width: 150px;
+                text-align: center;
                 color: black;
             }
+            
+            .box span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+  
+            .box span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+              }
+              
+              .box:hover span {
+                padding-right: 25px;
+              }
+              
+              .box:hover span:after {
+                opacity: 1;
+                right: 0;
+              }
             .closebtn {
               margin-right: 20px;
               color: white;

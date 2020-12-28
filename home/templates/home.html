@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home
+{% endblock  %}
+{% block body %}
+            <div class="container main">
+                {% if not user.is_authenticated %}
+                <div><a href="/login" class='button1'><p class='box'>LOGIN</p></a></div>
+                <div><a href='/register' class='button1'><p class='box'>SIGNUP</p></a></div>
+                {% else %}
+                <div>
+                <h3>Web Development internship</h3>
+                <p>TASK<p>
+                </div>
+                {% endif %}
+            </div>
+{% endblock  %}

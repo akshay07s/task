@@ -131,7 +131,7 @@ MESSAGE_TAGS ={
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 
-
+django_heroku.settings(locals())
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

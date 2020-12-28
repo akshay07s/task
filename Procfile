@@ -1,1 +1,1 @@
-web: gunicorn ZBlog.wsgi
+web: gunicorn task.wsgi

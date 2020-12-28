@@ -3,10 +3,16 @@
                 position: absolute;
                 margin-top: 0px;
             }
-            .button1{
-                position:relative;
-                top:50%;
-                left:40%;
+            #button1{
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                text-decoration: none;
+            }
+            #button2{
+                position: absolute;
+                top: 50%;
+                left: 60%;
                 text-decoration: none;
             }
             .box:hover{

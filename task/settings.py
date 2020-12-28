@@ -29,7 +29,10 @@ SECRET_KEY ='414e86a26fb08ee474c689a7f954540bba7f1ef393f9eb7e'
 #DEBUG = True
 DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
-ALLOWED_HOSTS = ['taskprofile.herokuapp.com']
+ALLOWED_HOSTS = ['https://taskprofile.herokuapp.com',
+                    'http://taskprofile.herokuapp.com/',
+                    'http://127.0.0.1:8000/',
+                ]
 
 
 # Application definition
